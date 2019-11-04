@@ -6,14 +6,14 @@ require('firebase/firestore');
 // Updated version will have a production database
 // With security rules added to them
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  databaseURL: process.env.DATABASE_URL,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID
+  apiKey: 'AIzaSyB-RKvLt2rLcjgJL2jIJGED0hVJgTA9I6s',
+  authDomain: 'morning-sun-dev.firebaseapp.com',
+  databaseURL: 'https://morning-sun-dev.firebaseio.com',
+  projectId: 'morning-sun-dev',
+  storageBucket: 'morning-sun-dev.appspot.com',
+  messagingSenderId: '1018247170478',
+  appId: '1:1018247170478:web:6d100469f2dc6d3dc7203f',
+  measurementId: 'G-QTGVJP6YP1'
 };
 
 firebase.initializeApp(firebaseConfig);
