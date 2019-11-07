@@ -1,6 +1,6 @@
 {
   "name": "morning-sun",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Real-time tracking for IoT devices.",
   "main": "index.js",
   "scripts": {
