@@ -40,16 +40,12 @@ run();
 
 ## Table of contents
 
----
-
 - [Config Object](#config-object)
 - [Features](#features)
 - [API](#api)
 - [Example](#example)
 
 ## Config Object
-
----
 
 Your config object must contain your account email, Api key, and Device ID
 
@@ -63,24 +59,24 @@ const config = {
 
 ### Options
 
-| Name                     | Type      | Default  | Values                 |
-| ------------------------ | --------- | -------- | ---------------------- |
-| offLineQueueing          | `Boolean` | `true`   | `true`, `false`        |
-| offlineQueueDropBehavior | `String`  | `oldest` | `'oldest'`, `'newest'` |
+| Name                     | Type    | Default | Values             |
+| ------------------------ | ------- | ------- | ------------------ |
+| offLineQueueing          | Boolean | true    | true, false        |
+| offlineQueueDropBehavior | String  | oldest  | 'oldest', 'newest' |
 
-`offLineQueueing`
+#### offLineQueueing
 
-#### Queues the data/logs when they fail to be published
+Queues the data/logs when they fail to be published.
 
-`offlineQueueDropBehavior`
+#### offlineQueueDropBehavior
 
-#### The drop behavior when the queue is full.
+The drop behavior when the queue is full.
 
 The `oldest` option will remove values that were first added to the queue, and the `newest` will remove values that were recently added to the queue.
 
----
-
 The default config object would look like this
+
+---
 
 ```js
 const config = {
@@ -112,7 +108,7 @@ You can log events with different levels (critical, error, warning, info)
 
 ##### .init()
 
-An function that requests a jsonwebtoken to the server and stores it in the config object. You must call this function before publishing any data.
+Requests a jsonwebtoken to the server and stores it in the config object. You must call this function before publishing any data.
 
 ```javascript
 async function() {
@@ -151,15 +147,15 @@ async function () => {
 
 Returns an object with two keys.
 
+```javascript
+const { today, now } = msun.getTime();
+```
+
 ```js
 {
   today: 2019-11-09
   now: 03:52:35
 }
-```
-
-```javascript
-const { today, now } = msun.getTime();
 ```
 
 ##### .log.critical(message)
@@ -182,8 +178,6 @@ msun.log.critical('Normal information');
 [back to top](#table-of-contents)
 
 ## Example
-
----
 
 ```javascript
 const msunIot = require('morning-sun');
