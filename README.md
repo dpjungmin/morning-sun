@@ -1,4 +1,4 @@
-# Morning Sun [![npm version](https://img.shields.io/npm/v/morning-sun)](https://www.npmjs.com/package/morning-sun) [![license](https://img.shields.io/npm/l/morning-sun)](https://www.npmjs.com/package/morning-sun)
+# Morning Sun [![npm version](https://img.shields.io/npm/v/morning-sun)](https://www.npmjs.com/package/morning-sun) [![license](https://img.shields.io/github/license/horimz/morning-sun)](https://www.npmjs.com/package/morning-sun)
 
 > Real-time tracking for photovoltaic panels.
 
