@@ -53,10 +53,10 @@ const config = {
 
 ### Options
 
-| Name                     | Type    | Default | Values             |
-| ------------------------ | ------- | ------- | ------------------ |
-| offLineQueueing          | Boolean | true    | true, false        |
-| offlineQueueDropBehavior | String  | oldest  | 'oldest', 'newest' |
+| Name                     | Type    | Default  | Values             |
+| ------------------------ | ------- | -------- | ------------------ |
+| offLineQueueing          | Boolean | true     | true, false        |
+| offlineQueueDropBehavior | String  | 'oldest' | 'oldest', 'newest' |
 
 #### offLineQueueing
 
@@ -68,9 +68,9 @@ The drop behavior when the queue is full.
 
 The `oldest` option will remove values that were first added to the queue, and the `newest` will remove values that were recently added to the queue.
 
-The default config object would look like this
-
 ---
+
+The default config object would look like this
 
 ```js
 const config = {
@@ -85,8 +85,6 @@ const config = {
 [back to top](#table-of-contents)
 
 ## Features
-
----
 
 1. Publish data
 
