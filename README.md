@@ -2,12 +2,6 @@
 
 > Real-time tracking for photovoltaic panels.
 
-<p align="center">
-	<br>
-	<img src="./images/logo.png" width="200">
-	<br>
-</p>
-
 ## Install
 
 ```
