@@ -103,9 +103,7 @@ You can log events with different levels (critical, error, warning, info)
 Requests a jsonwebtoken to the server and stores it in the config object. You must call this function before publishing any data.
 
 ```javascript
-async function() {
-  await msun.init();
-}
+await msun.init();
 ```
 
 ##### .publish(data)
@@ -130,9 +128,7 @@ The values will be converted into two digits before decimal point.
 The sleep method returns a `Promise` after `ms`
 
 ```javascript
-async function () => {
-  await msun.sleep(1000);
-}
+await msun.sleep(1000);
 ```
 
 ##### .getTime()
