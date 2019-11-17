@@ -14,7 +14,6 @@ npm i --save morning-sun
 const msunIot = require('morning-sun');
 
 const config = {
-  email: 'your-email',
   apiKey: 'your-api-key',
   deviceId: 'your-device-id'
 };
@@ -24,7 +23,7 @@ const msun = msunIot(config);
 async function run() {
   await msun.init();
 
-  var data = yourFunctionToReadSensorValues();
+  var data = yourFunctionThatReturnsSensorValues();
 
   msun.publish(data);
 }
@@ -45,7 +44,6 @@ Your config object must contain your account email, Api key, and Device ID
 
 ```js
 const config = {
-  email: 'your-email',
   apiKey: 'your-api-key',
   deviceId: 'your-device-id'
 };
@@ -74,7 +72,6 @@ The default config object would look like this
 
 ```js
 const config = {
-  email: 'your-email',
   apiKey: 'your-api-key',
   deviceId: 'your-device-id',
   offLineQueueing: true,
@@ -171,7 +168,6 @@ msun.log.critical('Normal information');
 const msunIot = require('morning-sun');
 
 const config = {
-  email: 'your-email',
   apiKey: 'your-api-key',
   deviceId: 'your-device-id'
 };
