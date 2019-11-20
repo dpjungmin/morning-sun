@@ -40,7 +40,7 @@ run();
 
 ## Config Object
 
-Your config object must contain your account email, Api key, and Device ID
+Your config object must contain your Api key and Device ID
 
 ```js
 const config = {
